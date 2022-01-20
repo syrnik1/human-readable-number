@@ -158,7 +158,7 @@ module.exports = function toReadable (number) {
             } 
         
             if(razrad === 1 ) {
-                switch(arr1[numbe1-razrad]) {
+                switch(arr1[number1-razrad]) {
                     case 0:
                         x = x + 'ноль';
                         break;
