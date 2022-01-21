@@ -8,8 +8,8 @@ module.exports = function toReadable (number) {
         razrad = razrad + 1;
     }
     number1 = razrad;
-    console.log('razrad=',razrad);
-    
+    console.log('razrad=',razrad);   
+  
     if (razrad === 3) {
         switch(arr1[number1-razrad]) {
             case 0:
@@ -83,8 +83,44 @@ module.exports = function toReadable (number) {
                 break;
         }
     } 
-   
-    if (razrad === 2 && arr1[number1-razrad] != 1) {
+    
+
+    if (razrad === 2 && arr1[number1-razrad] != 1 && arr1[number1-1] === 0) {
+        switch(arr1[number1-razrad]) {
+            case 0:
+                x = x + '';
+                break;
+            case 2:
+                x = x + 'twenty';
+                break;
+            case 3:
+                x = x + 'thirty';
+                break;
+            case 4:
+                x = x + 'forty';
+                break;
+            case 5:
+                x = x + 'fifty';
+                break;
+            case 6:
+                x = x + 'sixty';
+                break;
+            case 7:
+                x = x + 'seventy';
+                break;
+            case 8:
+                x = x + 'eighty';
+                break;
+            case 9:
+                x = x + 'ninety';
+                break;
+        }
+    }
+
+    
+
+
+    if (razrad === 2 && arr1[number1-razrad] != 1 && arr1[number1-1] != 0) {
         switch(arr1[number1-razrad]) {
             case 0:
                 x = x + '';
@@ -155,7 +191,8 @@ module.exports = function toReadable (number) {
         } if (x != ''){
             razrad = razrad-1;
         } 
-    }   
+    } 
+
     if(razrad === 1 ) {
             switch(arr1[number1-razrad]) {
                 case 0:
