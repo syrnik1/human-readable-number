@@ -54,31 +54,31 @@ module.exports = function toReadable (number) {
                     x = x + '';
                     break;
                 case 1:
-                    x = x + 'сто ';
+                    x = x + 'one hundred ';
                     break;
                 case 2:
-                    x = x + 'двести ';
+                    x = x + 'two hundred ';
                     break;
                 case 3:
-                    x = x + 'триста ';
+                    x = x + 'three hundred ';
                     break;
                 case 4:
-                    x = x + 'четыреста ';
+                    x = x + 'four hundred ';
                     break;
                 case 5:
-                    x = x + 'пятьсот ';
+                    x = x + 'five hundred ';
                     break;
                 case 6:
-                    x = x + 'шестьсот ';
+                    x = x + 'six hundred ';
                     break;
                 case 7:
-                    x = x + 'семьсот ';
+                    x = x + 'seven hundred ';
                     break;
                 case 8:
-                    x = x + 'восемьсот ';
+                    x = x + 'eight hundred ';
                     break;
                 case 9:
-                    x = x + 'девятьсот ';
+                    x = x + 'nine hundred ';
                     break;
             }
         }   
@@ -90,34 +90,34 @@ module.exports = function toReadable (number) {
         if (razrad === 2 && arr1[number1-razrad] === 1) {
             switch(10 *arr1[number1-razrad] + arr1[number1-1]) {   //созд. двузначного числа из 2-х последних эл массива
                 case 10:
-                    x = x + 'десять';
+                    x = x + 'ten';
                     break;
                 case 11:
-                    x = x + 'одиннадцать';
+                    x = x + 'eleven';
                     break;
                 case 12:
-                    x = x + 'двенадцать';
+                    x = x + 'twelve';
                     break;
                 case 13:
-                    x = x + 'тринадцать';
+                    x = x + 'thirteen';
                     break;
                 case 14:
-                    x = x + 'четырнадцать';
+                    x = x + 'fourteen';
                     break;
                 case 15:
-                    x = x +'пятнадцать';
+                    x = x +'fifteen';
                     break;
                 case 16:
-                    x = x + 'шестнадцать';
+                    x = x + 'sixteen';
                     break;
                 case 17:
-                    x = x + 'семьнадцать';
+                    x = x + 'seventeen';
                     break;
                 case 18:
-                    x = x + 'восемьнадцать';
+                    x = x + 'eighteen';
                     break;
                 case 19:
-                    x = x + 'девятнадцать';
+                    x = x + 'nineteen';
                     break;
             }
         } 
@@ -128,28 +128,28 @@ module.exports = function toReadable (number) {
                     x = x + '';
                     break;
                 case 2:
-                    x = x + 'двадцать ';
+                    x = x + 'twenty ';
                     break;
                 case 3:
-                    x = x + 'тридцать ';
+                    x = x + 'thirty ';
                     break;
                 case 4:
-                    x = x + 'сорок ';
+                    x = x + 'forty ';
                     break;
                 case 5:
-                    x = x + 'пятьдесят ';
+                    x = x + 'fifty ';
                     break;
                 case 6:
-                    x = x + 'шестьдесят ';
+                    x = x + 'sixty ';
                     break;
                 case 7:
-                    x = x + 'семьдесят ';
+                    x = x + 'seventy ';
                     break;
                 case 8:
-                    x = x + 'восемьдесят ';
+                    x = x + 'eighty ';
                     break;
                 case 9:
-                    x = x + 'девяносто ';
+                    x = x + 'ninety ';
                     break;
             }
     
@@ -192,8 +192,10 @@ module.exports = function toReadable (number) {
                 }
             } 
         }
-    console.log(x);
+   
 } 
+
+
 
 
 
