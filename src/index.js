@@ -1,4 +1,4 @@
-module.exports = function toReadable (number) {
+module.exports = function toReadable(number) {
         let x = '';
         let razrad = 0;
         let number1 = 0;
@@ -192,7 +192,7 @@ module.exports = function toReadable (number) {
                 }
             } 
         }
-   
+   return x;
 } 
 
 
