@@ -8,9 +8,9 @@ module.exports = function toReadable (number) {
         razrad = razrad + 1;
     }
     number1 = razrad;
-    console.log('razrad=',razrad);   
+    console.log('razrad=',number1);   
   
-    if (razrad === 3 && arr1[number1-razrad + 1] === 0 && arr1[number1-1] === 0) {
+    if (razrad === 3 && arr1[number1-2] === 0 && arr1[number1-1] === 0) {
         switch(arr1[number1-razrad]) {
             case 0:
                 x = x + '';
@@ -45,7 +45,7 @@ module.exports = function toReadable (number) {
         }
     }   
 
-    if (razrad === 3 && (arr1[number1-razrad] != 0 || arr1[number1-1] != 0)) {
+    if (razrad === 3 && (arr1[number1-2] != 0 || arr1[number1-1] != 0)) {
         switch(arr1[number1-razrad]) {
             case 0:
                 x = x + '';
@@ -265,6 +265,9 @@ module.exports = function toReadable (number) {
 
 return x;
 } 
+
+
+
 
 
 
