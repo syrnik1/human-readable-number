@@ -45,37 +45,37 @@ module.exports = function toReadable (number) {
         }
     }   
 
-    if (razrad === 3 && arr1[number1-razrad] != 0) {
+    if (razrad === 3 && (arr1[number1-razrad] != 0 || arr1[number1-1] != 0)) {
         switch(arr1[number1-razrad]) {
             case 0:
                 x = x + '';
                 break;
             case 1:
-                x = x + 'one hundred';
+                x = x + 'one hundred ';
                 break;
             case 2:
-                x = x + 'two hundred';
+                x = x + 'two hundred ';
                 break;
             case 3:
-                x = x + 'three hundred';
+                x = x + 'three hundred ';
                 break;
             case 4:
-                x = x + 'four hundred';
+                x = x + 'four hundred ';
                 break;
             case 5:
-                x = x + 'five hundred';
+                x = x + 'five hundred ';
                 break;
             case 6:
-                x = x + 'six hundred';
+                x = x + 'six hundred ';
                 break;
             case 7:
-                x = x + 'seven hundred';
+                x = x + 'seven hundred ';
                 break;
             case 8:
-                x = x + 'eight hundred';
+                x = x + 'eight hundred ';
                 break;
             case 9:
-                x = x + 'nine hundred';
+                x = x + 'nine hundred ';
                 break;
         }
     }
@@ -265,6 +265,9 @@ module.exports = function toReadable (number) {
 
 return x;
 } 
+
+
+
 
 
 
