@@ -10,45 +10,6 @@ module.exports = function toReadable (number) {
     number1 = razrad;
     console.log('razrad=',razrad);
     
-    if (razrad === 4) {
-        switch(arr1[number1-razrad]) {
-            case 0:
-                x = x + '';
-                break;
-            case 1:
-                x = x + 'одна тысяча ';
-                break;
-            case 2:
-                x = x + 'две тысячи ';
-                break;
-            case 3:
-                x = x + 'три тысячи ';
-                break;
-            case 4:
-                x = x + 'четыре тысячи ';
-                break;
-            case 5:
-                x = x + 'пять тысяч ';
-                break;
-            case 6:
-                x = x + 'шесть тысяч ';
-                break;
-            case 7:
-                x = x + 'семь тысяч ';
-                break;
-            case 8:
-                x = x + 'восемь тысяч ';
-                break;
-            case 9:
-                x = x + 'девять тысяч ';
-                break;
-        }
-    }  
-
-    if (x != ''){
-        razrad = razrad - 1;
-    } 
-
     if (razrad === 3) {
         switch(arr1[number1-razrad]) {
             case 0:
