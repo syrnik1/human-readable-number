@@ -160,40 +160,42 @@ module.exports = function toReadable (number) {
             if(razrad === 1 ) {
                 switch(arr1[number1-razrad]) {
                     case 0:
-                        x = x + 'ноль';
+                        x = x + 'zero';
                         break;
                     case 1:
-                        x = x + 'один';
+                        x = x + 'one';
                         break;
                     case 2:
-                        x = x + 'два';
+                        x = x + 'two';
                         break;
                     case 3:
-                        x = x + 'три';
+                        x = x + 'three';
                         break;
                     case 4:
-                        x = x + 'четыре';
+                        x = x + 'four';
                         break;
                     case 5:
-                        x = x + 'пять';
+                        x = x + 'five';
                         break;
                     case 6:
-                        x = x + 'шесть';
+                        x = x + 'six';
                         break;
                     case 7:
-                        x = x + 'семь';
+                        x = x + 'seven';
                         break;
                     case 8:
-                        x = x + 'восемь';
+                        x = x + 'eight';
                         break;
                     case 9:
-                        x = x + 'девять';
+                        x = x + 'nine';
                         break;
                 }
             } 
         }
     console.log(x);
 } 
+
+
 
 
 
